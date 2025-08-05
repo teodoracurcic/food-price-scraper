@@ -30,7 +30,7 @@ jobs:
     - name: Install Playwright dependencies
       run: playwright install
     - name: Scraping today's data
-      run: jupyter nbconvert --to notebook --execute "tracking-prices-in-serbia.ipynb" --stdout
+      run: jupyter nbconvert --to notebook --execute "cleaning.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
